@@ -15,9 +15,15 @@ fetch("data/products.json")
 
   const container = document.getElementById("product-details");
 
+  let gallery = "";
+
+  product.images.forEach(img => {
+    gallery += `<img src="${img}" width="250">`;
+  });
+
   container.innerHTML = `
     <h2>${product.name}</h2>
-    <img src="${product.images[0]}" width="300">
+    <div>${gallery}</div>
     <p>Price: ₹${product.price}</p>
     <p>${product.description}</p>
   `;
