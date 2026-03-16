@@ -60,3 +60,53 @@ width:100%;
 height:200px;
 object-fit:cover;
 }
+
+#products-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+padding:40px;
+
+}
+
+.product-card{
+
+border:1px solid #ddd;
+
+padding:20px;
+
+text-align:center;
+
+background:white;
+
+}
+
+.product-card img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+}
+
+.product-card a{
+
+display:inline-block;
+
+margin-top:10px;
+
+text-decoration:none;
+
+color:white;
+
+background:black;
+
+padding:10px 20px;
+
+}
