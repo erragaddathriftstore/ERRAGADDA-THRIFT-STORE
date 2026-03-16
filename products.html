@@ -1,17 +1,37 @@
-<!DOCTYPE html>
-<html>
+<h1>Shop</h1>
 
-<head>
-  <title>Shop Products</title>
-</head>
+<div id="products-container"></div>
 
-<body>
+<script>
 
-<h1>Shop Products</h1>
+fetch("data/products.json")
+.then(response => response.json())
+.then(data => {
 
-<div id="product-list"></div>
+const container = document.getElementById("products-container");
 
-<script src="js/script.js"></script>
+data.products.forEach(product => {
 
-</body>
-</html>
+const productCard = `
+<div class="product-card">
+
+<img src="${product.images[0]}">
+
+<h3>${product.name}</h3>
+
+<p>₹${product.price}</p>
+
+<a href="product.html?id=${product.id}">
+View Product
+</a>
+
+</div>
+`;
+
+container.innerHTML += productCard;
+
+});
+
+});
+
+</script>
