@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": "TS001",
+      "id": "TS0001",
       "name": "Vintage Black Hoodie",
       "price": 799,
       "category": "hoodie",
@@ -12,15 +12,15 @@
       "fabric": "Cotton",
       "stock": 2,
       "images": [
-        "images/TS001-1.jpg",
-        "images/TS001-2.jpg",
-        "images/TS001-3.jpg",
-        "images/TS001-4.jpg"
+        "images/TS0001-1.jpg",
+        "images/TS0001-2.jpg",
+        "images/TS0001-3.jpg",
+        "images/TS0001-4.jpg"
       ],
       "description": "Premium thrifted Nike hoodie in excellent condition."
     },
     {
-      "id": "TS002",
+      "id": "TS0002",
       "name": "Oversized Denim Jacket",
       "price": 1299,
       "category": "jacket",
@@ -31,11 +31,11 @@
       "fabric": "Denim",
       "stock": 1,
       "images": [
-        "images/TS002-1.jpg",
-        "images/TS002-2.jpg",
-        "images/TS002-3.jpg",
-        "images/TS002-4.jpg",
-        "images/TS002-5.jpg"
+        "images/TS0002-1.jpg",
+        "images/TS0002-2.jpg",
+        "images/TS0002-3.jpg",
+        "images/TS0002-4.jpg",
+        "images/TS0002-5.jpg"
       ],
       "description": "Classic oversized Levis denim jacket."
     }
