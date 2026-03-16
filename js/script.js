@@ -20,3 +20,39 @@ fetch("data/products.json")
   });
 
 });
+
+
+container.innerHTML = `
+
+<div class="product-images">
+
+<img id="main-image" src="${product.images[0]}">
+
+<div class="thumbnail-row">
+${product.images.map(img=>`<img src="${img}" onclick="changeImage('${img}')">`).join("")}
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h2>${product.name}</h2>
+
+<p>Price: ₹${product.price}</p>
+
+<p>${product.description}</p>
+
+<label>Size:</label>
+
+<select id="size-select">
+${product.sizes.map(s=>`<option>${s}</option>`).join("")}
+</select>
+
+<br>
+
+<button onclick="orderWhatsApp('${product.name}','${product.id}')">
+Order on WhatsApp
+</button>
+
+</div>
+`;
