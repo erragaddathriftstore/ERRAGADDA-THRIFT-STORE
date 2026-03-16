@@ -1,1 +1,27 @@
+<h1>Product Details</h1>
 
+<div id="product-details"></div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const productId = params.get("id");
+
+fetch("data/products.json")
+.then(response => response.json())
+.then(data => {
+
+  const product = data.products.find(p => p.id === productId);
+
+  const container = document.getElementById("product-details");
+
+  container.innerHTML = `
+    <h2>${product.name}</h2>
+    <img src="${product.images[0]}" width="300">
+    <p>Price: ₹${product.price}</p>
+    <p>${product.description}</p>
+  `;
+
+});
+
+</script>
