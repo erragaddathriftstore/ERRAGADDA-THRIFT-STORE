@@ -117,3 +117,54 @@ height:250px;
 object-fit:cover;
 }
 
+#products-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+padding:40px;
+
+}
+
+.product-card{
+
+background:white;
+
+border:1px solid #ddd;
+
+padding:15px;
+
+text-align:center;
+
+border-radius:6px;
+
+}
+
+.product-card h3{
+font-size:18px;
+margin:10px 0;
+}
+
+.product-card p{
+font-weight:bold;
+}
+
+.product-card a{
+
+display:inline-block;
+
+background:black;
+
+color:white;
+
+padding:8px 15px;
+
+text-decoration:none;
+
+margin-top:10px;
+
+}
+
